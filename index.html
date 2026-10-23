@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cosmoproff — профессиональная уходовая косметика</title>
+<meta name="description" content="Cosmoproff: интернет-магазин профессиональной уходовой косметики для дома и салонов. Демо-сайт.">
+<meta name="theme-color" content="#e8417f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23e8417f'/%3E%3Cpath d='M42 22a14 14 0 1 0 0 20' fill='none' stroke='%23fff' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="css/style.css?v=20261024f">
+</head>
+<body>
+
+<a class="skip" href="#main">К содержимому</a>
+
+<!-- ─────────── Loader ─────────── -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__logo">COSMO<b>PROFF</b></div>
+  <i class="loader__bar"><b></b></i>
+</div>
+
+<!-- ─────────── Running line ─────────── -->
+<div class="ticker" aria-label="Акции">
+  <div class="ticker__in">
+    <span>Бесплатная доставка по Казахстану от 15 000 ₸</span><i>✦</i>
+    <span>−20% на первый заказ по промокоду PINK20</span><i>✦</i>
+    <span>Только оригинальная продукция от официальных дистрибьюторов</span><i>✦</i>
+    <span>Бесплатная онлайн-консультация косметолога</span><i>✦</i>
+    <span aria-hidden="true">Бесплатная доставка по Казахстану от 15 000 ₸</span><i aria-hidden="true">✦</i>
+    <span aria-hidden="true">−20% на первый заказ по промокоду PINK20</span><i aria-hidden="true">✦</i>
+    <span aria-hidden="true">Только оригинальная продукция от официальных дистрибьюторов</span><i aria-hidden="true">✦</i>
+    <span aria-hidden="true">Бесплатная онлайн-консультация косметолога</span><i aria-hidden="true">✦</i>
+  </div>
+</div>
+
+<!-- ─────────── Header ─────────── -->
+<header class="hdr" id="hdr">
+  <div class="hdr__row wrap">
+    <div class="hdr__side">
+      <button class="ibtn hdr__menu" type="button" data-open="menu" aria-label="Каталог"><i data-ic="menu"></i><span class="hdr__lbl">Каталог</span></button>
+      <button class="hdr__city" type="button" data-open="city" aria-label="Город доставки"><i data-ic="pin"></i><span data-city>Алматы</span></button>
+    </div>
+    <a class="logo" href="#top" aria-label="Cosmoproff — на главную">
+      <span class="logo__word">COSMO<b>PROFF</b></span>
+      <span class="logo__sub">professional care</span>
+    </a>
+    <div class="hdr__side hdr__side--r">
+      <button class="ibtn" type="button" data-open="search" aria-label="Поиск"><i data-ic="search"></i></button>
+      <button class="ibtn hide-m" type="button" data-open="fav" aria-label="Избранное"><i data-ic="heart"></i><b class="count" data-count="fav" hidden>0</b></button>
+      <button class="ibtn hide-m" type="button" data-open="login" data-user aria-label="Профиль"><i data-ic="user"></i></button>
+      <button class="ibtn" type="button" data-open="cart" id="cartBtn" aria-label="Корзина"><i data-ic="bag"></i><b class="count" data-count="cart" hidden>0</b></button>
+    </div>
+  </div>
+  <nav class="hdr__nav" aria-label="Разделы каталога">
+    <div class="wrap hdr__links">
+      <a href="#catalog" data-filter="face">Лицо</a>
+      <a href="#catalog" data-filter="body">Тело</a>
+      <a href="#catalog" data-filter="hair">Волосы</a>
+      <a href="#catalog" data-filter="hands">Руки и ноги</a>
+      <a href="#catalog" data-filter="pro">Для салонов</a>
+      <a href="#catalog" data-filter="sets">Наборы</a>
+      <a href="#brands">Бренды</a>
+      <a href="#catalog" data-filter="sale" class="is-hot">Скидки</a>
+      <a href="#club">Club</a>
+      <a href="#journal">Журнал</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ═════════ Hero slider ═════════ -->
+  <section class="hero" id="top" aria-roledescription="карусель" aria-label="Акции и новинки">
+    <div class="hero__track">
+
+      <article class="slide slide--blush is-active" aria-roledescription="слайд" aria-label="1 из 4">
+        <div class="wrap slide__in">
+          <div class="slide__copy">
+            <p class="eyebrow">Профессиональная косметика</p>
+            <h2 class="slide__title">салонный уход —<br><em>у вас дома</em></h2>
+            <p class="slide__text">Формулы, с которыми работают косметологи, теперь в вашей ванной. Подберём средства под задачи кожи и привезём завтра.</p>
+            <div class="slide__btns"><a class="btn btn--pink" href="#catalog">В каталог</a><a class="btn btn--line" href="#quiz">Подобрать уход</a></div>
+          </div>
+          <div class="slide__art" data-art="1,22,12"></div>
+        </div>
+      </article>
+
+      <article class="slide slide--pink is-dark" aria-roledescription="слайд" aria-label="2 из 4">
+        <div class="wrap slide__in">
+          <div class="slide__copy">
+            <p class="eyebrow">Только онлайн</p>
+            <h2 class="slide__title">−20%<br><em>на первый заказ</em></h2>
+            <p class="slide__text">Промокод PINK20 действует на весь уход, кроме наборов. Плюс 2 000 приветственных бонусов в Cosmoproff Club.</p>
+            <div class="slide__btns"><button class="btn btn--white" type="button" data-copy="PINK20">Скопировать PINK20</button><a class="btn btn--line" href="#catalog" data-filter="sale">Скидки</a></div>
+          </div>
+          <div class="slide__art" data-art="9,16,19"></div>
+        </div>
+      </article>
+
+      <article class="slide slide--plum is-dark" aria-roledescription="слайд" aria-label="3 из 4">
+        <div class="wrap slide__in">
+          <div class="slide__copy">
+            <p class="eyebrow">Для косметологов</p>
+            <h2 class="slide__title">профессиональная<br><em>линия</em></h2>
+            <p class="slide__text">Пилинги, альгинатные маски, ампульные курсы и кабинетные объёмы по оптовым ценам — с обучением от технологов брендов.</p>
+            <div class="slide__btns"><a class="btn btn--white" href="#pro">Стать партнёром</a><a class="btn btn--line" href="#catalog" data-filter="pro">Смотреть линию</a></div>
+          </div>
+          <div class="slide__art" data-art="7,25,8"></div>
+        </div>
+      </article>
+
+      <article class="slide slide--peach" aria-roledescription="слайд" aria-label="4 из 4">
+        <div class="wrap slide__in">
+          <div class="slide__copy">
+            <p class="eyebrow">Cosmoproff Club</p>
+            <h2 class="slide__title">до 15%<br><em>возвращаем бонусами</em></h2>
+            <p class="slide__text">Копите бонусы с каждой покупки и оплачивайте ими до 30% следующего заказа. Регистрация — за минуту.</p>
+            <div class="slide__btns"><button class="btn btn--pink" type="button" data-open="login">Вступить в клуб</button><a class="btn btn--line" href="#club">Подробнее</a></div>
+          </div>
+          <div class="slide__art slide__art--club" data-art="23,19">
+            <div class="pcard pcard--hero" aria-hidden="true">
+              <span class="pcard__logo">COSMOPROFF</span><span class="pcard__lvl">RUBY</span>
+              <span class="pcard__chip"></span><span class="pcard__num">•••• •••• 2026</span><span class="pcard__bal">15% бонусами</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <div class="hero__ui wrap">
+      <div class="hero__dots" id="heroDots"></div>
+      <div class="hero__arrows">
+        <button class="ibtn ibtn--round" type="button" id="heroPrev" aria-label="Предыдущий слайд"><i data-ic="left"></i></button>
+        <button class="ibtn ibtn--round" type="button" id="heroNext" aria-label="Следующий слайд"><i data-ic="right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════ Stories ═════════ -->
+  <section class="stories" aria-label="Истории">
+    <ul class="stories__list wrap" id="stories"></ul>
+  </section>
+
+  <!-- ═════════ Hits ═════════ -->
+  <section class="shelf wrap" id="hits" aria-labelledby="hitsTitle">
+    <div class="shelf__head">
+      <h2 class="h2" id="hitsTitle">хиты</h2>
+      <a class="more" href="#catalog" data-filter="hit">смотреть все <i data-ic="arrow"></i></a>
+      <div class="shelf__nav">
+        <button class="ibtn ibtn--round" type="button" data-shelf-prev aria-label="Назад"><i data-ic="left"></i></button>
+        <button class="ibtn ibtn--round" type="button" data-shelf-next aria-label="Вперёд"><i data-ic="right"></i></button>
+      </div>
+    </div>
+    <div class="shelf__track" data-shelf="hit"></div>
+  </section>
+
+  <!-- ═════════ Two promo tiles ═════════ -->
+  <section class="duo wrap" aria-label="Предложения">
+    <article class="tile tile--pink" data-in>
+      <p class="eyebrow">Первый заказ</p>
+      <h3 class="tile__title">−20%<br><em>по промокоду</em></h3>
+      <button class="code" type="button" data-copy="PINK20"><span>PINK20</span><small>нажмите, чтобы скопировать</small></button>
+      <div class="tile__art" data-art="12,19"></div>
+    </article>
+    <article class="tile tile--plum" data-in>
+      <p class="eyebrow">Для косметологов</p>
+      <h3 class="tile__title">оптовые цены<br><em>до −30%</em></h3>
+      <a class="btn btn--white" href="#pro">Стать партнёром</a>
+      <div class="tile__art" data-art="7,28"></div>
+    </article>
+  </section>
+
+  <!-- ═════════ New ═════════ -->
+  <section class="shelf wrap" id="new" aria-labelledby="newTitle">
+    <div class="shelf__head">
+      <h2 class="h2" id="newTitle">новинки</h2>
+      <a class="more" href="#catalog" data-filter="new">смотреть все <i data-ic="arrow"></i></a>
+      <div class="shelf__nav">
+        <button class="ibtn ibtn--round" type="button" data-shelf-prev aria-label="Назад"><i data-ic="left"></i></button>
+        <button class="ibtn ibtn--round" type="button" data-shelf-next aria-label="Вперёд"><i data-ic="right"></i></button>
+      </div>
+    </div>
+    <div class="shelf__track" data-shelf="new"></div>
+  </section>
+
+  <!-- ═════════ Routine quiz ═════════ -->
+  <section class="quiz wrap" id="quiz" aria-labelledby="quizTitle">
+    <div class="quiz__box" data-in>
+      <div class="quiz__side">
+        <p class="eyebrow">Подбор ухода</p>
+        <h2 class="h2" id="quizTitle">ритуал под вашу кожу <em>за 30 секунд</em></h2>
+        <p class="muted quiz__lead">Ответьте на три вопроса — подберём средства из каталога и выстроим их в правильном порядке.</p>
+        <ol class="quiz__steps" id="quizSteps"><li>Тип кожи</li><li>Задача</li><li>Время</li></ol>
+      </div>
+      <div class="quiz__main" id="quizMain" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ═════════ Pro shelf ═════════ -->
+  <section class="shelf wrap" id="cabinet" aria-labelledby="proTitle">
+    <div class="shelf__head">
+      <h2 class="h2" id="proTitle">для кабинета <em>косметолога</em></h2>
+      <a class="more" href="#catalog" data-filter="pro">смотреть все <i data-ic="arrow"></i></a>
+      <div class="shelf__nav">
+        <button class="ibtn ibtn--round" type="button" data-shelf-prev aria-label="Назад"><i data-ic="left"></i></button>
+        <button class="ibtn ibtn--round" type="button" data-shelf-next aria-label="Вперёд"><i data-ic="right"></i></button>
+      </div>
+    </div>
+    <div class="shelf__track" data-shelf="pro"></div>
+  </section>
+
+  <!-- ═════════ Catalog ═════════ -->
+  <section class="catalog wrap" id="catalog" aria-labelledby="catTitle">
+    <div class="catalog__head">
+      <h2 class="h2" id="catTitle">каталог</h2>
+      <p class="muted" id="catCount" aria-live="polite"></p>
+    </div>
+    <div class="catalog__bar">
+      <div class="chips" id="chips" role="tablist" aria-label="Категории"></div>
+      <div class="catalog__tools">
+        <label class="select"><span class="sr-only">Бренд</span><select id="brandSel"><option value="all">Все бренды</option></select></label>
+        <label class="select"><span class="sr-only">Сортировка</span>
+          <select id="sortSel">
+            <option value="pop">Популярные</option>
+            <option value="rate">По рейтингу</option>
+            <option value="cheap">Сначала дешевле</option>
+            <option value="dear">Сначала дороже</option>
+            <option value="sale">По размеру скидки</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="catalog__more"><button class="btn btn--line" type="button" id="moreBtn">Показать ещё</button></div>
+  </section>
+
+  <!-- ═════════ Brands ═════════ -->
+  <section class="brands" id="brands" aria-labelledby="brandsTitle">
+    <div class="wrap brands__head">
+      <h2 class="h2" id="brandsTitle">бренды</h2>
+      <p class="muted">Работаем напрямую с лабораториями и официальными дистрибьюторами. Нажмите на бренд, чтобы открыть его в каталоге.</p>
+    </div>
+    <div class="marquee"><div class="marquee__in" id="brandsA"></div></div>
+    <div class="marquee marquee--rev"><div class="marquee__in" id="brandsB"></div></div>
+  </section>
+
+  <!-- ═════════ Loyalty club ═════════ -->
+  <section class="club wrap" id="club" aria-labelledby="clubTitle">
+    <div class="club__copy" data-in>
+      <p class="eyebrow">Программа лояльности</p>
+      <h2 class="h2" id="clubTitle">cosmoproff club — <em>бонусы с каждой покупки</em></h2>
+      <ul class="levels">
+        <li><b>Pink</b><span>5% бонусами</span><small>с первой покупки</small></li>
+        <li><b>Rose</b><span>10% бонусами</span><small>от 150 000 ₸ в год</small></li>
+        <li><b>Ruby</b><span>15% бонусами</span><small>от 400 000 ₸ в год</small></li>
+      </ul>
+      <p class="muted">Бонусами можно оплатить до 30% заказа. 2 000 приветственных бонусов — сразу после регистрации, ещё 1 000 — в день рождения.</p>
+      <button class="btn btn--pink" type="button" data-open="login" id="clubBtn">Вступить в клуб</button>
+    </div>
+    <div class="club__stage" data-in>
+      <div class="pcard" id="clubCard" data-tilt aria-hidden="true">
+        <span class="pcard__logo">COSMOPROFF</span>
+        <span class="pcard__lvl" id="clubLevel">PINK</span>
+        <span class="pcard__chip"></span>
+        <span class="pcard__num" id="clubNum">•••• •••• 2026</span>
+        <span class="pcard__bal" id="clubBal">2 000 приветственных бонусов</span>
+        <i class="pcard__shine"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════ For professionals ═════════ -->
+  <section class="pro" id="pro" aria-labelledby="proBlockTitle">
+    <div class="wrap pro__in">
+      <div class="pro__copy" data-in>
+        <p class="eyebrow">Для косметологов, салонов и студий</p>
+        <h2 class="h2" id="proBlockTitle">работайте с <em>Cosmoproff Pro</em></h2>
+        <ul class="ticks">
+          <li><i data-ic="percent"></i><div><b>Оптовые цены до −30%</b><span>по сертификату косметолога или договору с салоном</span></div></li>
+          <li><i data-ic="flask"></i><div><b>Кабинетные объёмы</b><span>пилинги, маски и кремы по 500–1000 мл, ампульные курсы</span></div></li>
+          <li><i data-ic="sparkle"></i><div><b>Обучение и семинары</b><span>протоколы процедур от технологов брендов — офлайн и онлайн</span></div></li>
+          <li><i data-ic="chat"></i><div><b>Личный менеджер</b><span>подбор линии под ваш кабинет, образцы и быстрая отгрузка</span></div></li>
+        </ul>
+        <div class="stats">
+          <div><b data-count-to="1200">1200</b><span>мастеров с нами</span></div>
+          <div><b data-count-to="40">40</b><span>профессиональных брендов</span></div>
+          <div><b data-count-to="24">24</b><span>часа — отгрузка по Алматы</span></div>
+        </div>
+      </div>
+      <form class="pro__form" id="proForm" data-in novalidate>
+        <h3>заявка на партнёрство</h3>
+        <label class="field"><span>Имя</span><input name="name" required autocomplete="name" placeholder="Как к вам обращаться"></label>
+        <label class="field"><span>Телефон</span><input name="phone" required inputmode="tel" autocomplete="tel" data-phone placeholder="+7 (___) ___-__-__"></label>
+        <label class="field"><span>Город</span><select name="city" id="proCity"></select></label>
+        <fieldset class="seg"><legend>Кто вы</legend>
+          <label><input type="radio" name="type" value="Косметолог" checked><span>Косметолог</span></label>
+          <label><input type="radio" name="type" value="Салон"><span>Салон</span></label>
+          <label><input type="radio" name="type" value="Студия"><span>Студия</span></label>
+        </fieldset>
+        <button class="btn btn--pink btn--wide" type="submit">Отправить заявку</button>
+        <p class="tiny">Демо-версия: данные никуда не отправляются.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═════════ Journal ═════════ -->
+  <section class="journal wrap" id="journal" aria-labelledby="journalTitle">
+    <div class="shelf__head"><h2 class="h2" id="journalTitle">журнал</h2></div>
+    <div class="journal__grid" id="journalGrid"></div>
+  </section>
+
+  <!-- ═════════ Perks ═════════ -->
+  <section class="perks wrap" aria-label="Почему Cosmoproff">
+    <div class="perk" data-in><span class="perk__ic"><i data-ic="shield"></i></span><div><b>Только оригинал</b><span>Сертифицированная продукция от официальных дистрибьюторов</span></div></div>
+    <div class="perk" data-in><span class="perk__ic"><i data-ic="truck"></i></span><div><b>Доставка за 1–2 дня</b><span>По Алматы — завтра, бесплатно от 15 000 ₸</span></div></div>
+    <div class="perk" data-in><span class="perk__ic"><i data-ic="chat"></i></span><div><b>Консультация косметолога</b><span>Подскажем уход в WhatsApp и Telegram бесплатно</span></div></div>
+    <div class="perk" data-in><span class="perk__ic"><i data-ic="gift"></i></span><div><b>Пробники к заказу</b><span>Два мини-формата в подарок к каждому заказу</span></div></div>
+  </section>
+
+</main>
+
+<!-- ─────────── Footer ─────────── -->
+<footer class="ftr">
+  <div class="wrap ftr__top">
+    <div class="ftr__about">
+      <a class="logo" href="#top"><span class="logo__word">COSMO<b>PROFF</b></span><span class="logo__sub">professional care</span></a>
+      <p>Профессиональная уходовая косметика для дома и салонов. Работаем с 2026 года.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram" data-demo><i data-ic="insta"></i></a>
+        <a href="#" aria-label="Telegram" data-demo><i data-ic="telegram"></i></a>
+        <a href="#" aria-label="WhatsApp" data-demo><i data-ic="whatsapp"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Покупателям</h4>
+      <ul>
+        <li><button type="button" data-info="delivery">Доставка и оплата</button></li>
+        <li><button type="button" data-info="returns">Возврат</button></li>
+        <li><button type="button" data-product="29">Подарочные карты</button></li>
+        <li><a href="#club">Cosmoproff Club</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Профессионалам</h4>
+      <ul>
+        <li><a href="#pro">Оптовые цены</a></li>
+        <li><a href="#catalog" data-filter="pro">Кабинетная линия</a></li>
+        <li><a href="#pro">Обучение</a></li>
+        <li><a href="#pro">Стать партнёром</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Компания</h4>
+      <ul>
+        <li><button type="button" data-info="about">О нас</button></li>
+        <li><a href="#brands">Бренды</a></li>
+        <li><a href="#journal">Журнал</a></li>
+        <li><button type="button" data-open="city">Города доставки</button></li>
+      </ul>
+    </div>
+    <div class="ftr__sub">
+      <h4>Скидка 10% за подписку</h4>
+      <p>Новинки, акции и советы косметологов раз в неделю.</p>
+      <form class="subscribe" id="subForm" novalidate>
+        <input type="email" name="email" placeholder="Ваш e-mail" aria-label="E-mail" autocomplete="email" required>
+        <button type="submit" aria-label="Подписаться"><i data-ic="arrow"></i></button>
+      </form>
+      <p class="ftr__contact"><i data-ic="phone"></i> +7 (700) 000-00-00</p>
+      <p class="ftr__contact"><i data-ic="pin"></i> Алматы, ежедневно 10:00–22:00</p>
+    </div>
+  </div>
+  <div class="wrap ftr__bot">
+    <span>© 2026 Cosmoproff. Демо-сайт: бренды, товары и цены условные.</span>
+    <span class="pay"><span>VISA</span><span>Mastercard</span><span>Kaspi QR</span></span>
+  </div>
+</footer>
+
+<!-- ─────────── Mobile tab bar ─────────── -->
+<nav class="tabbar" aria-label="Быстрое меню">
+  <button type="button" data-open="top"><i data-ic="home"></i>Главная</button>
+  <button type="button" data-open="menu"><i data-ic="grid"></i>Каталог</button>
+  <button type="button" data-open="fav"><i data-ic="heart"></i>Избранное<b class="count" data-count="fav" hidden>0</b></button>
+  <button type="button" data-open="cart" data-tab="cart"><i data-ic="bag"></i>Корзина<b class="count" data-count="cart" hidden>0</b></button>
+  <button type="button" data-open="login" data-user><i data-ic="user"></i>Профиль</button>
+</nav>
+
+<!-- ─────────── Overlays ─────────── -->
+<div class="layer drawer drawer--l" id="menu" hidden role="dialog" aria-modal="true" aria-label="Каталог">
+  <div class="layer__scrim" data-close></div>
+  <div class="drawer__panel">
+    <div class="drawer__head"><span class="logo__word">COSMO<b>PROFF</b></span><button class="ibtn" type="button" data-close aria-label="Закрыть"><i data-ic="close"></i></button></div>
+    <div class="drawer__body"><nav class="menu" id="menuList" aria-label="Категории"></nav></div>
+    <div class="drawer__foot menu__foot">
+      <button class="hdr__city" type="button" data-open="city"><i data-ic="pin"></i>Доставка: <b data-city>Алматы</b></button>
+      <p class="tiny">+7 (700) 000-00-00 · ежедневно 10:00–22:00</p>
+    </div>
+  </div>
+</div>
+
+<div class="layer drawer drawer--r" id="cart" hidden role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+  <div class="layer__scrim" data-close></div>
+  <div class="drawer__panel">
+    <div class="drawer__head"><h3 id="cartTitle">корзина<sup id="cartN"></sup></h3><button class="ibtn" type="button" data-close aria-label="Закрыть"><i data-ic="close"></i></button></div>
+    <div class="drawer__body" id="cartBody"></div>
+    <div class="drawer__foot" id="cartFoot"></div>
+  </div>
+</div>
+
+<div class="layer drawer drawer--r" id="fav" hidden role="dialog" aria-modal="true" aria-labelledby="favTitle">
+  <div class="layer__scrim" data-close></div>
+  <div class="drawer__panel drawer__panel--wide">
+    <div class="drawer__head"><h3 id="favTitle">избранное<sup id="favN"></sup></h3><button class="ibtn" type="button" data-close aria-label="Закрыть"><i data-ic="close"></i></button></div>
+    <div class="drawer__body" id="favBody"></div>
+  </div>
+</div>
+
+<div class="layer search" id="search" hidden role="dialog" aria-modal="true" aria-label="Поиск">
+  <div class="layer__scrim" data-close></div>
+  <div class="search__panel">
+    <div class="wrap">
+      <form class="search__bar" id="searchForm" role="search">
+        <i data-ic="search"></i>
+        <input id="q" type="search" placeholder="Сыворотка, SPF, ретинол, бренд…" aria-label="Поиск по каталогу" autocomplete="off">
+        <button class="ibtn" type="button" data-close aria-label="Закрыть поиск"><i data-ic="close"></i></button>
+      </form>
+      <div class="search__body" id="searchBody"></div>
+    </div>
+  </div>
+</div>
+
+<div class="layer modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="layer__scrim" data-close></div>
+  <div class="modal__box">
+    <button class="ibtn modal__x" type="button" data-close aria-label="Закрыть"><i data-ic="close"></i></button>
+    <div id="modalIn"></div>
+  </div>
+</div>
+
+<div class="layer story" id="story" hidden role="dialog" aria-modal="true" aria-label="Истории">
+  <div class="layer__scrim" data-close></div>
+  <button class="ibtn story__arrow story__arrow--l" type="button" data-story-go="-1" aria-label="Предыдущая история"><i data-ic="left"></i></button>
+  <div class="story__box" id="storyBox"></div>
+  <button class="ibtn story__arrow story__arrow--r" type="button" data-story-go="1" aria-label="Следующая история"><i data-ic="right"></i></button>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="js/data.js?v=20261024f"></script>
+<script src="js/art.js?v=20261024f"></script>
+<script src="js/main.js?v=20261024f"></script>
+</body>
+</html>
